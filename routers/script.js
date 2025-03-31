@@ -10,8 +10,33 @@ router.get('/posts.js', function(req, res){
 
 //show
 router.get('/posts.js/:id', function(req, res){
-    res.send()
+    const id = req.params.id;
+    const post = posts.find(script => script.slug === id);
+
+    if(script){
+        res.json(posts);
+    }
 });
+
+//store
+router.post("/", function(req, res){
+   res.send("New Post")
+});
+
+
+//update
+router.put("/:id", function(req, res){
+    const id = req.params.id;
+    res.send('Modifica completa del post $[id]');
+});
+
+
+//modify
+router.patch("/:id", function(req, res){
+
+})
+
+
 
 
 
