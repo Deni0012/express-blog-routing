@@ -8,7 +8,7 @@
     "watch": "node --watch app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Denise Di Genni",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2"
