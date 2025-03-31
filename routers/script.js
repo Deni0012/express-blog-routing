@@ -33,33 +33,39 @@ router.put("/:id", function(req, res){
 
 //modify
 router.patch("/:id", function(req, res){
+    const id = req.params.id;
+    res.send('Modifica parziale del post $[id]');
+});
 
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//destroy
+router.delete("/:id", function(req, res){
+    const id = req.params.id;
+    res.send('Elimina elemento $[id]');
+});
 
 
 
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
