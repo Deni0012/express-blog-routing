@@ -10,5 +10,5 @@ app.use("./data/posts.js", scriptRouter);
 
 
 app.listen(port, function (){
-    console.log("Server attivo")
+    console.log("Server attivo");
 });

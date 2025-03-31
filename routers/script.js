@@ -4,12 +4,12 @@ const posts = require("../data/posts.js");
 
 
 //index
-router.get('/posts.js', function(req, res){
+router.get('/', function(req, res){
     res.json(posts);
 });
 
 //show
-router.get('/posts.js/:id', function(req, res){
+router.get('/:id', function(req, res){
     const id = req.params.id;
     const post = posts.find(script => script.slug === id);
 
